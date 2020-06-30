@@ -54,11 +54,11 @@
          }).addTo(map);
 
         function getColor(value) {
-            return value > 139 ? '#33FF00':
-                   value > 87  ? '#99FF00':
+            return value > 139 ? '#FF0000':
+                   value > 87  ? '#FF9900':
                    value > 53 ? '#CCFF00':
-                   value > 32  ? '#FF9900':
-                                 '#FF0000';   // 0, 32, 53, 87, 139
+                   value > 32  ? '#99FF00':
+                                 '#33FF00';   // 0, 32, 53, 87, 139
         }
 
         function style(feature){
