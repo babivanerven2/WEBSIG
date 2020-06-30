@@ -54,11 +54,11 @@
          }).addTo(map);
 
         function getColor(value) {
-            return value > 139 ? '#FF0000':
-                   value > 87  ? '#FF9900':
-                   value > 53 ? '#FFFF00':
-                   value > 32  ? '#33CC00':
-                                 '#006600';   // 0, 32, 53, 87, 139
+            return value > 2206 ? '#FF0000':
+                   value > 1107  ? '#FF9900':
+                   value > 575 ? '#FFFF00':
+                   value > 231  ? '#33CC00':
+                   value > 56  ? '#006600';   // 0, 32, 53, 87, 139 mudando 0,56,231,575,1107,2206
         }
 
         function style(feature){
@@ -118,7 +118,7 @@
           legend.onAdd = function (map) {
 
               var div = L.DomUtil.create('div', 'legend'),
-                  grades = [0, 32, 53, 87, 139]; // The break values to define the intervals of population, note we begin from 0 here
+                  grades = [0, 56, 231, 575, 1107, 2206]; // The break values to define the intervals of population, note we begin from 0 here
 
               div.innerHTML = '<b>CASOS CONFIRMADOS <br> <br> </b>'; // The legend title, in this case it's Population Density 2011
 
