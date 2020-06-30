@@ -109,7 +109,7 @@
             style:style,
             onEachFeature: onEachFeature
         }).bindTooltip(function (layer){
-            return ' Concelho: </p> + 'layer.feature.properties.Concelho 
+            return ' Concelho: </p>' + layer.feature.properties.Concelho 
                    + '<p style="color:purple">' + ' Distrito: </p>' + layer.feature.properties.Distrito + '<p style="color:purple">'+ layer.feature.properties.Confirmado.toString() + ' casos por 10.000 hab. </p>';       
         }).addTo(map);
 
